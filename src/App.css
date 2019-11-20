@@ -41,3 +41,11 @@ h1 {
 .recipes {
   margin-top: 100px;
 }
+
+@media only screen and (max-width: 435px) {
+  .fixed-top {
+    position: fixed;
+    margin-top: 30px;
+    margin-left: 50px;
+  }
+}
