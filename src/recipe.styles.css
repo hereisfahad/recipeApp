@@ -57,3 +57,16 @@
 .ingredient i {
   color: #fb466a;
 }
+
+@media only screen and (max-width: 435px) {
+  .recipe {
+    border-radius: 12px;
+    padding: 20px 0;
+    margin: 20px;
+    width: 320px;
+    background-color: aliceblue;
+    box-shadow: 8px 5px 5px 2px #9e9c9c26;
+    letter-spacing: 1px;
+    border: 1px solid #80808024;
+  }
+}

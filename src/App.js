@@ -20,6 +20,7 @@ export default class App extends Component {
       `https://api.edamam.com/search?q=${this.state.query}&app_id=${APP_ID}&app_key=${APP_KEY}`
     );
     const data = await response.json();
+    console.log(data);
     this.setState({ recipes: data.hits, loading: false }, () =>
       console.log(this.state)
     );
@@ -60,7 +61,7 @@ export default class App extends Component {
               title={recipe.recipe.label}
               calories={recipe.recipe.calories}
               image={recipe.recipe.image}
-              ingredients={recipe.recipe.ingredients}
+              ingredients={recipe.recipe.ingredientLines}
             />
           ))}
         </div>
